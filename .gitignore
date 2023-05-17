@@ -1,0 +1,6 @@
+# list for files
+*.ipynb_checkpoints
+
+# list for folders
+__pycache__/
+data/*.mat
