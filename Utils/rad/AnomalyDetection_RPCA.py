@@ -123,7 +123,7 @@ def _reshape_pad(X:np.ndarray,frequency:int):
 
 def _decision_mad(x,mu,ma):
 	"""
-	 Outliers with mad
+	Outliers with mad
 	"""
 	if x!=0 and ((abs(x-ma)/mu)>1.4826):
 		return 1
@@ -209,7 +209,7 @@ class AnomalyDetection_RPCA(BaseEstimator):
 		Returns
 		-------
 		self: object
-		      Fitted estimador
+		    Fitted estimador
 		"""
 		self._fit(X)
 		return self

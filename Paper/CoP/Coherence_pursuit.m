@@ -28,8 +28,10 @@ n = fix(n) ; r = fix(r) ;
 T = repmat(sum(D.^2).^0.5 , N1 , 1) ;
 X = D./T ; 
 
-G = X'*X ; G = G - diag(diag(G)) ;
-p = sum(G.^2) ; p = p/max(p) ; 
+G = X'*X ; 
+G = G - diag(diag(G)) ;
+p = sum(G.^2) ; 
+p = p/max(p) ; 
 
 figure ; stem(p); title('The elements of vector p') ; grid on ; 
 

@@ -1,4 +1,5 @@
 clc ; close all ; clear all ; 
+rng('default');
 
 N1 = 200 ;  % The dimension of ambient space
 n1 = 100 ;  % The number of inliers
@@ -13,6 +14,9 @@ D= [A  B] ;    % Given data
 n = 10*3 ;     % Number of data points sampled by CoP algorithm
                % to form the recovered subspace
                 
-Uh = Coherence_pursuit(D , n, r) ;   
+Uh = Coherence_pursuit(D , n, r) ;  
 
-recovery_error = norm(vec(Uh - U*U'*Uh),2)/norm(vec(U),2)  % Recovery error
+
+err = Uh - U*U'*Uh;
+
+recovery_error = norm(err(:), 2)/norm(U(:),2) % Recovery error
