@@ -328,7 +328,7 @@ class AnomalyDetection_RPCA(BaseEstimator):
 		    return Output	
 
 	def num_outliers(self):
-		"""
+		""".
 		Number of Outliers
 		"""
 		check_is_fitted(self,attributes=['_S'])
