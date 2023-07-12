@@ -1,0 +1,13 @@
+인천항 모니터링 데이터 대상 online PCA 수행
+11/1~6/30 data 대상
+dataset: CG1~4, TT1~4, TC1(concrete temp), TC2(air temp)
+
+label: 0(baseline), 1(outliers)
+* outlier는 1월 1일 데이터부터 생성
+
+1번함체: CG1(이격), 2(침하), TT1 (상부경사), 2 (하부경사)
+
+3번함체: CG3, 4, TT3, 4 (상동)
+
+
+
