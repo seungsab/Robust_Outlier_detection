@@ -124,9 +124,16 @@ dependencies:
   - zlib=1.2.13
   - zstd=1.5.4
   - pip:
+      - comm==0.2.1
+      - et-xmlfile==2.0.0
+      - ipywidgets==8.1.1
+      - jupyterlab-widgets==3.0.9
       - opencv-contrib-python==4.7.0.72
       - opencv-python==4.7.0.72
+      - openpyxl==3.1.5
       - pillow==9.5.0
+      - pywavelets==1.4.1
       - torchdrift==0.1.0.post1
       - tqdm==4.65.0
-prefix: C:\Users\user\anaconda3\envs\Robust_OD_port_infras
+      - widgetsnbextension==4.0.9
+prefix: C:\Users\USER\anaconda3\envs\Robust_OD_port_infras
